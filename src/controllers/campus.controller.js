@@ -41,8 +41,6 @@ export const search = (req, res) => {
     if (program) {
         results = results.filter(el => el.programs.includes(program))
     }
-    console.log(program)
-    
     if (open) {
         results = results.filter(el => el.open === (open === "true"));
     }
